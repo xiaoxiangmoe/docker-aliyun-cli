@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -euxo pipefail
+
+docker tag $IMAGE_NAME $DOCKER_REPO:$ALIYUNCLI_VERSION
+
+docker push $DOCKER_REPO:$ALIYUNCLI_VERSION
